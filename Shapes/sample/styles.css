@@ -1,0 +1,47 @@
+.circle {
+
+    height: 400px;
+    width: 400px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.rectangle {
+    background-color: pink;
+    height: 300px;
+    width: 600px;
+
+}
+
+
+.flip-box {
+    background-color: rgba(255, 255, 0, 0.768);
+    width: 600px;
+    height: 400px;
+    border: 2px solid #f1f1f1;
+    perspective: 2000px;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.4s;
+    transform-style: flat;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-box-back {
+    background-color: indigo;
+    color: white;
+    transform: rotateY(180deg);
+}
